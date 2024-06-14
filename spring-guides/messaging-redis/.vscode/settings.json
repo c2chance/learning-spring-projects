@@ -1,0 +1,7 @@
+{
+    "spring.initializr.parentFolder": "none",
+    "spring.initializr.defaultLanguage": "Java",
+    "spring.initializr.serviceUrl": [        
+        "https://start.spring.io"
+    ]
+}
