@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/spring-boot/learning-microservices/chapter06/gamification" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/spring-boot/lmwsb-2e/Book-Microservices-v2/chapter03" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/spring-boot/lmwsb-2e/chapter03/multiplication" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/spring-boot/lmwsb-2e/multiplication" vcs="Git" />
