@@ -1,8 +1,32 @@
+### Operating System Files ###
+*.DS_Store
+Thumbs.db
+*.sw?
+.#*
+*#
+*~
+*.sublime-*
+
+
 HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
+
+### Build Artifacts ###
+.gradle/
+build/
+target/
+bin/
+dependency-reduced-pom.xml
+
+### Eclipse Project Files ###
+.classpath
+.project
+.settings/
+.sts4-cache/
+.attach_pid*
 
 ### STS ###
 .apt_generated
@@ -13,8 +37,8 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
+### IntelliJ IDEA Files ###
+*.idea
 *.iws
 *.iml
 *.ipr
@@ -31,3 +55,10 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Node.js ###
+node
+node_modules
+.parcel-cache
+
+README.html
