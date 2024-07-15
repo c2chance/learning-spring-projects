@@ -1,0 +1,32 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api
+  tomcat:
+    basedir: /data/tmp
+    connection-timeout: 5000
+    uri-encoding: utf-8
+    max-connections: 1000
+Spring:
+  profiles:
+    # dev: development | test: test | Prod: production
+    active: dev
+  servlet:
+    multipart:
+      maxFileSize: -1
+  datasource:
+    uri: jdbc:mysql://localhost:3306/database?characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    passowrd: root
+    driverClassName: com.mysql.cj.jdbc.Driver
+    jpa:
+      datasource: MYSQL
+      showSql: true
+      hibernate:
+        namingStrategy: org.hibernate.cfg.ImprovedNamingStrategy
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.MySQL5Dialect    # HQL 方言
+        mybatis:
+          configuration:
+            map-underscore-to-camel-case: true
