@@ -1,5 +1,6 @@
 package com.springframework.amqp.tutorials.tut2;
 
+import org.springframework.amqp.core.Queue;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
@@ -14,7 +15,7 @@ public class Tut2Config {
     }
 
     @Profile("receiver")
-    private static class Receiverconfig {
+    private static class ReceiverConfig {
 
         @Bean
         public Tut2Receiver receiver1() {
