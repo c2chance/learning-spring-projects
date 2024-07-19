@@ -20,6 +20,7 @@ public class Tut5Receiver {
         watch.start();
         System.out.println("instance " + receiver + " [x] Received '" + in + "'");
         doWork(in);
+        watch.stop();
         System.out.println("instance " + receiver + " [x] Done in " + watch.getTotalTimeSeconds() + "s");
     }
 

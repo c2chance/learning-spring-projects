@@ -16,7 +16,19 @@ public class RabbitAmqpTutorialsApplication {
 	public CommandLineRunner usage() {
 		return args -> {
 			System.out.println("This app uses Spring profiles to control its behavior.\n");
-			System.out.println("Sample usage: java -jar rabbit-tutorials.jar --spring.profiles.active=hello-world, sender");
+			System.out.println("Options are: ");
+			System.out.println("java -jar target/rabbitmq-tutorials.jar --spring.profiles.active=hello-world,receiver");
+			System.out.println("java -jar target/rabbitmq-tutorials.jar --spring.profiles.active=hello-world,sender");
+			System.out.println("java -jar target/rabbitmq-tutorials.jar --spring.profiles.active=work-queues,receiver");
+			System.out.println("java -jar target/rabbitmq-tutorials.jar --spring.profiles.active=work-queues,sender");
+			System.out.println("java -jar target/rabbitmq-tutorials.jar --spring.profiles.active=pub-sub,receiver");
+			System.out.println("java -jar target/rabbitmq-tutorials.jar --spring.profiles.active=pub-sub,sender");
+			System.out.println("java -jar target/rabbitmq-tutorials.jar --spring.profiles.active=routing,receiver");
+			System.out.println("java -jar target/rabbitmq-tutorials.jar --spring.profiles.active=routing,sender");
+			System.out.println("java -jar target/rabbitmq-tutorials.jar --spring.profiles.active=topics,receiver");
+			System.out.println("java -jar target/rabbitmq-tutorials.jar --spring.profiles.active=topics,sender");
+			System.out.println("java -jar target/rabbitmq-tutorials.jar --spring.profiles.active=rpc,client");
+			System.out.println("java -jar target/rabbitmq-tutorials.jar --spring.profiles.active=rpc,server");
 		};
 	}
 

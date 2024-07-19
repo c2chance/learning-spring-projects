@@ -54,14 +54,11 @@ public class Tut4Config {
         public Tut4Receiver receiver() {
             return new Tut4Receiver();
         }
-
-        @Profile("sender")
-        @Bean
-        public Tut4Sender sender() {
-            return new Tut4Sender();
-        }
-
-
     }
-    
+
+    @Profile("sender")
+    @Bean
+    public Tut4Sender sender() {
+            return new Tut4Sender();
+    }
 }

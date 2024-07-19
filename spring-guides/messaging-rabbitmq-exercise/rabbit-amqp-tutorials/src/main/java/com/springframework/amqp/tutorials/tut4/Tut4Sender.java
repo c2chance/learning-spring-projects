@@ -31,7 +31,7 @@ public class Tut4Sender {
 
         String key = keys[this.index.get()];
         builder.append(key).append(' ');
-        builder.append(this.count.get());
+        builder.append(this.count.incrementAndGet());
         String message = builder.toString();
         template.convertAndSend(direct.getName(), key, message);
         System.out.println(" [x] Sent '" + message + "'");

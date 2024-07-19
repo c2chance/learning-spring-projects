@@ -6,7 +6,7 @@ import org.springframework.util.StopWatch;
 public class Tut3Receiver {
 
     @RabbitListener(queues="#{autoDeleteQueue1.name}")
-    public void receiver1(String in) throws InterruptedException {
+    public void receive1(String in) throws InterruptedException {
         receive(in, 1);
     }
 

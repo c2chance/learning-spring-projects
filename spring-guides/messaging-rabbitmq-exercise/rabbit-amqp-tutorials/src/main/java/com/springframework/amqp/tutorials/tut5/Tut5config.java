@@ -43,7 +43,7 @@ public class Tut5config {
 
         @Bean
         public Binding binding1b(TopicExchange topic, Queue autoDeleteQueue1) {
-            return BindingBuilder.bind(autoDeleteQueue1).to(topic).with("*.*rabbit");
+            return BindingBuilder.bind(autoDeleteQueue1).to(topic).with("*.*.rabbit");
         }
 
         @Bean

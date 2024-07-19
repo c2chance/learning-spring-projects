@@ -4,7 +4,7 @@ import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.util.StopWatch;
 
-@RabbitListener(queues="hello")
+@RabbitListener(queues="tut.hello")
 public class Tut2Receiver {
 
     private final int instance;
@@ -14,7 +14,7 @@ public class Tut2Receiver {
     }
 
     @RabbitHandler
-    public void receiver(String in) throws InterruptedException {
+    public void receive(String in) throws InterruptedException {
         StopWatch watch = new StopWatch();
         watch.start();
         System.out.println("instance " + this.instance + " [x] Received '" + in + "'");
