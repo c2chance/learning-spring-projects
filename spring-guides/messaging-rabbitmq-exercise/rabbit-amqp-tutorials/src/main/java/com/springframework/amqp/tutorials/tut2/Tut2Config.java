@@ -11,7 +11,7 @@ public class Tut2Config {
     
     @Bean
     public Queue hello() {
-        return new Queue("hello");
+        return new Queue("tut.hello");
     }
 
     @Profile("receiver")

@@ -21,8 +21,8 @@ public class RabbitAmqpTutorialsApplication {
 			System.out.println("java -jar target/rabbitmq-tutorials.jar --spring.profiles.active=hello-world,sender");
 			System.out.println("java -jar target/rabbitmq-tutorials.jar --spring.profiles.active=work-queues,receiver");
 			System.out.println("java -jar target/rabbitmq-tutorials.jar --spring.profiles.active=work-queues,sender");
-			System.out.println("java -jar target/rabbitmq-tutorials.jar --spring.profiles.active=pub-sub,receiver");
-			System.out.println("java -jar target/rabbitmq-tutorials.jar --spring.profiles.active=pub-sub,sender");
+			System.out.println("java -jar target/rabbitmq-tutorials.jar --spring.profiles.active=pub-sub,receiver --tutorial.client.duration=60000");
+			System.out.println("java -jar target/rabbitmq-tutorials.jar --spring.profiles.active=pub-sub,sender --tutorial.client.duration=60000");
 			System.out.println("java -jar target/rabbitmq-tutorials.jar --spring.profiles.active=routing,receiver");
 			System.out.println("java -jar target/rabbitmq-tutorials.jar --spring.profiles.active=routing,sender");
 			System.out.println("java -jar target/rabbitmq-tutorials.jar --spring.profiles.active=topics,receiver");

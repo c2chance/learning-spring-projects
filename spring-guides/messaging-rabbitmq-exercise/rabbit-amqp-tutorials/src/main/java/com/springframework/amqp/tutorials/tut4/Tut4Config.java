@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
-@Profile({"tutu4", "routing"})
+@Profile({"tut4", "routing"})
 @Configuration
 public class Tut4Config {
 

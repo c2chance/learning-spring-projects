@@ -32,7 +32,7 @@ public class Tut3Config {
         }
 
         @Bean
-        public Binding binging1(FanoutExchange fanout, 
+        public Binding binding1(FanoutExchange fanout,
           Queue autoDeleteQueue1) {
             return BindingBuilder.bind(autoDeleteQueue1).to(fanout);
         }
