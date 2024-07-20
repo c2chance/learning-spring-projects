@@ -10,5 +10,4 @@ public class ServiceARestController {
     public String helloWorld() {
         return "Hello world from Service A!";
     }
-    
 }
